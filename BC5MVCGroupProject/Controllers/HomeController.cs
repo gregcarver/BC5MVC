@@ -26,5 +26,10 @@ namespace BC5MVCGroupProject.Controllers
 
             return View();
         }
+
+        public ActionResult Donate()
+        {
+            return View();
+        }
     }
 }
