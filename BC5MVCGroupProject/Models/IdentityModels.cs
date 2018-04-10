@@ -29,5 +29,7 @@ namespace BC5MVCGroupProject.Models
         {
             return new ApplicationDbContext();
         }
+
+        public System.Data.Entity.DbSet<BC5MVCGroupProject.Models.Volunteer> Volunteers { get; set; }
     }
 }
