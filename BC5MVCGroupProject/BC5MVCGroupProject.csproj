@@ -196,6 +196,15 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201804101612492_InitialCreate.cs" />
+    <Compile Include="Migrations\201804101612492_InitialCreate.Designer.cs">
+      <DependentUpon>201804101612492_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201804101808080_VolunteerView.cs" />
+    <Compile Include="Migrations\201804101808080_VolunteerView.Designer.cs">
+      <DependentUpon>201804101808080_VolunteerView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
@@ -280,6 +289,14 @@
   <ItemGroup>
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201804101612492_InitialCreate.resx">
+      <DependentUpon>201804101612492_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804101808080_VolunteerView.resx">
+      <DependentUpon>201804101808080_VolunteerView.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
