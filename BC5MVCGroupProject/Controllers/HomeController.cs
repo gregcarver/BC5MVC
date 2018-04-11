@@ -31,5 +31,11 @@ namespace BC5MVCGroupProject.Controllers
         {
             return View();
         }
+        public ActionResult Gallery()
+        {
+            ViewBag.Message = "Pictures are here.";
+
+            return View();
+        }
     }
 }

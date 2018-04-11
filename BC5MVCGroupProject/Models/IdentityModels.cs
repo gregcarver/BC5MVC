@@ -31,5 +31,7 @@ namespace BC5MVCGroupProject.Models
         }
 
         public System.Data.Entity.DbSet<BC5MVCGroupProject.Models.Volunteer> Volunteers { get; set; }
+
+        public System.Data.Entity.DbSet<BC5MVCGroupProject.Models.Gallery> Galleries { get; set; }
     }
 }
