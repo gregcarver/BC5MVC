@@ -12,7 +12,8 @@ namespace BC5MVCGroupProject.Migrations
             AutomaticMigrationsEnabled = false;
 
             ContextKey = "BC5MVCGroupProject.Models.ApplicationDbContext";
- //37759bb117aec356fa2b8130e25f0066611cb807
+
+//>>>>>>> 37759bb117aec356fa2b8130e25f0066611cb807
         }
 
         protected override void Seed(BC5MVCGroupProject.Models.ApplicationDbContext context)

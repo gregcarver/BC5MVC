@@ -190,20 +190,18 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
-    <Compile Include="Controllers\GalleryController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\VolunteersController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201804111820314_dog.cs" />
-    <Compile Include="Migrations\201804111820314_dog.Designer.cs">
-      <DependentUpon>201804111820314_dog.cs</DependentUpon>
+    <Compile Include="Migrations\201804112005177_thing.cs" />
+    <Compile Include="Migrations\201804112005177_thing.Designer.cs">
+      <DependentUpon>201804112005177_thing.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
-    <Compile Include="Models\Gallery.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\Volunteer.cs" />
@@ -213,56 +211,6 @@
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
-    <Content Include="Content\Images\IMG_0003.JPG" />
-    <Content Include="Content\Images\IMG_0006.JPG" />
-    <Content Include="Content\Images\IMG_0007.JPG" />
-    <Content Include="Content\Images\IMG_0008.JPG" />
-    <Content Include="Content\Images\IMG_0009.JPG" />
-    <Content Include="Content\Images\IMG_0013.JPG" />
-    <Content Include="Content\Images\IMG_0016.JPG" />
-    <Content Include="Content\Images\IMG_0017.JPG" />
-    <Content Include="Content\Images\IMG_0018.JPG" />
-    <Content Include="Content\Images\IMG_0019.JPG" />
-    <Content Include="Content\Images\IMG_0021.JPG" />
-    <Content Include="Content\Images\IMG_0022.JPG" />
-    <Content Include="Content\Images\IMG_0027.JPG" />
-    <Content Include="Content\Images\IMG_9448.JPG" />
-    <Content Include="Content\Images\IMG_9449.JPG" />
-    <Content Include="Content\Images\IMG_9450.JPG" />
-    <Content Include="Content\Images\IMG_9451.JPG" />
-    <Content Include="Content\Images\IMG_9453.JPG" />
-    <Content Include="Content\Images\IMG_9456.JPG" />
-    <Content Include="Content\Images\IMG_9460.JPG" />
-    <Content Include="Content\Images\IMG_9462.JPG" />
-    <Content Include="Content\Images\IMG_9463.JPG" />
-    <Content Include="Content\Images\IMG_9465.JPG" />
-    <Content Include="Content\Images\IMG_9467.JPG" />
-    <Content Include="Content\Images\IMG_9487.JPG" />
-    <Content Include="Content\Images\IMG_9488.JPG" />
-    <Content Include="Content\Images\IMG_9491.JPG" />
-    <Content Include="Content\Images\IMG_9493.JPG" />
-    <Content Include="Content\Images\IMG_9495.JPG" />
-    <Content Include="Content\Images\IMG_9500.JPG" />
-    <Content Include="Content\Images\IMG_9509.JPG" />
-    <Content Include="Content\Images\IMG_9911.JPG" />
-    <Content Include="Content\Images\IMG_9913.JPG" />
-    <Content Include="Content\Images\IMG_9914.JPG" />
-    <Content Include="Content\Images\IMG_9915.JPG" />
-    <Content Include="Content\Images\IMG_9922.JPG" />
-    <Content Include="Content\Images\IMG_9928.JPG" />
-    <Content Include="Content\Images\IMG_9938.JPG" />
-    <Content Include="Content\Images\IMG_9943.JPG" />
-    <Content Include="Content\Images\IMG_9946.JPG" />
-    <Content Include="Content\Images\IMG_9947.JPG" />
-    <Content Include="Content\Images\IMG_9951.JPG" />
-    <Content Include="Content\Images\IMG_9952.JPG" />
-    <Content Include="Content\Images\IMG_9953.JPG" />
-    <Content Include="Content\Images\IMG_9955.JPG" />
-    <Content Include="Content\Images\IMG_9957.JPG" />
-    <Content Include="Content\Images\IMG_9959.JPG" />
-    <Content Include="Content\Images\IMG_9961.JPG" />
-    <Content Include="Content\Images\IMG_9991.JPG" />
-    <Content Include="Content\Images\IMG_9992.JPG" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -322,11 +270,6 @@
     <Content Include="Views\Volunteers\Edit.cshtml" />
     <Content Include="Views\Volunteers\Index.cshtml" />
     <Content Include="Views\Home\Donate.cshtml" />
-    <Content Include="Views\Gallery\Create.cshtml" />
-    <Content Include="Views\Gallery\Delete.cshtml" />
-    <Content Include="Views\Gallery\Details.cshtml" />
-    <Content Include="Views\Gallery\Edit.cshtml" />
-    <Content Include="Views\Gallery\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -345,8 +288,8 @@
     <Content Include="Scripts\jquery-1.10.2.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201804111820314_dog.resx">
-      <DependentUpon>201804111820314_dog.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201804112005177_thing.resx">
+      <DependentUpon>201804112005177_thing.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
