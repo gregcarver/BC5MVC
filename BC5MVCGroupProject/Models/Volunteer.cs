@@ -20,6 +20,7 @@ namespace BC5MVCGroupProject.Models
         public int Phone { get; set; }
         public string Email { get; set; }
         [DisplayName("Questions or Comments")]
+        [DataType(DataType.MultilineText)]
         public string Description { get; set; }
     }
 }
