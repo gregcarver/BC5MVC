@@ -52,7 +52,7 @@ namespace BC5MVCGroupProject.Controllers
             {
                 db.Volunteers.Add(volunteer);
                 db.SaveChanges();
-                return RedirectToAction("Index");
+                return RedirectToAction("Create");
             }
 
             return View(volunteer);
