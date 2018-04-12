@@ -9,86 +9,87 @@
 
 </head>
 <body>
-	<div id="fb-root"></div>
-	<script>
-		(function (d, s, id) {
-			var js, fjs = d.getElementsByTagName(s)[0];
-			if (d.getElementById(id)) return;
-			js = d.createElement(s); js.id = id;
-			js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.12';
-			fjs.parentNode.insertBefore(js, fjs);
-		}(document, 'script', 'facebook-jssdk'));</script>
-	<div class="navbar navbar-inverse navbar-fixed-top">
-		<div class="container">
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
-				@Html.ActionLink("Drexell & Honeybee's", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
-			</div>
-			<div class="navbar-collapse collapse">
-				<ul class="nav navbar-nav">
-					<li>@Html.ActionLink("About", "About", "Home")</li>
-					<li>@Html.ActionLink("Volunteer", "Create", "Volunteers")</li>
-					<li>@Html.ActionLink("Donate", "Donate", "Home")</li>
-					<li>@Html.ActionLink("Contact", "Contact", "Home")</li>
-					<li>@Html.ActionLink("Gallery", "Index", "Gallery")</li>
+    <div id="fb-root"></div>
+    <script>
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.12';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                @Html.ActionLink("Drexell & Honeybee's", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li>@Html.ActionLink("About", "About", "Home")</li>
+                    <li>@Html.ActionLink("Volunteer", "Create", "Volunteers")</li>
+                    <li>@Html.ActionLink("Donate", "Donate", "Home")</li>
+                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                    <li>@Html.ActionLink("Gallery", "Index", "Gallery")</li>
 
-				</ul>
-				@*<a href="/Account/Register" id="registerLink">Register</a>*@
+                </ul>
+                @*<a href="/Account/Register" id="registerLink">Register</a>*@
 
-			</div>
+            </div>
 
-		</div>
-	</div>
+        </div>
+    </div>
 
-	<div class="container body-content">
-		@RenderBody()
-		<hr />
-		<footer>
-			<div>
-				<div style="float:left; width: 25%;">
-					<span>#PhonePlaceHold#</span>
-					<br />
-					<span>#AdressPlaceHold#</span>
-				</div>
-				<div>
-					<!--style="margin:auto; width:20%;"-->
-					<div style="float:left; width:25%" class="fb-like"
-						 data-href="https://www.facebook.com/foodyescashno/"
-						 data-layout="button"
-						 data-action="like"
-						 data-size="small"
-						 data-show-faces="false"
-						 data-share="true">
-					</div>
+    <div class="container body-content">
+        @RenderBody()
+
+        <footer style="position:fixed; left:0; bottom:0; width:100%; background-color:#311e0d; color: #fad97a; border-top: 1px solid ; border-top-color: #000000; padding-top:3px">
+
+            <div>
+                <div style="justify-content:center; padding-left:1em; font-size:smaller;float:left; width: 33%;">
+                    <span>Phone: 251-727-2411</span>
+                    <br />
+                    <span>109 Lee Street, Brewton, AL 36426</span>
+                </div>
+
+                <!--style="margin:auto; width:20%;"-->
+                <div style="justify-content:center;float:left; width:33%" class="fb-like"
+                     data-href="https://www.facebook.com/foodyescashno/"
+                     data-layout="button"
+                     data-action="like"
+                     data-size="small"
+                     data-show-faces="false"
+                     data-share="true">
+                </div>
 
 
-					<div style="float: left; width:25%;">
-						<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-							<input type="hidden" name="cmd" value="_s-xclick">
-							<input type="hidden" name="hosted_button_id" value="TZVPMSQXB3QKA">
-							<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-							<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-						</form>
-					</div>
+                <div style="justify-content:center; float: left; width:33%;">
+                    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                        <input type="hidden" name="cmd" value="_s-xclick">
+                        <input type="hidden" name="hosted_button_id" value="TZVPMSQXB3QKA">
+                        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                        <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                    </form>
+                </div>
 
-				</div>
 
-				<div>
-					<span style="float:left; width: 25%">@Html.Partial("_LoginPartial")</span>
-				</div>
-				<!--<div>
-					<span style="margin:auto; width:10%;">&copy; @DateTime.Now.Year - Drexell &amp; Honeybee's</span>
-				</div> //this is being weird-->
-			</div>
-		</footer>
-	</div>
+                <!--
+                <div>
+                    <span style="float:left; width: 25%">@*@Html.Partial("_LoginPartial")*@</span>
+                </div>-->
+                <!--<div>
+                    <span style="margin:auto; width:10%;">&copy; @DateTime.Now.Year - Drexell &amp; Honeybee's</span>
+                </div> //this is being weird-->
+            </div>
+        </footer>
+    </div>
 
-	@Scripts.Render("~/bundles/jquery")
-	@Scripts.Render("~/bundles/bootstrap")
-	@RenderSection("scripts", required: false)
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
 </body>
 </html>
