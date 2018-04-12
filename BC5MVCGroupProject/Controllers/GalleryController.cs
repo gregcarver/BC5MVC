@@ -17,7 +17,8 @@ namespace BC5MVCGroupProject.Controllers
         // GET: Gallery
         public ActionResult Index()
         {
-            return View(db.Galleries.ToList());
+            //return View(db.Galleries.ToList());
+            return View();
         }
 
         // GET: Gallery/Details/5
