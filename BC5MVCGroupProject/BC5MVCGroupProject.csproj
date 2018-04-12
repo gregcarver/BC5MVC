@@ -201,6 +201,10 @@
     <Compile Include="Migrations\201804112051524_galleryFix.Designer.cs">
       <DependentUpon>201804112051524_galleryFix.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201804112106270_Gallery.cs" />
+    <Compile Include="Migrations\201804112106270_Gallery.Designer.cs">
+      <DependentUpon>201804112106270_Gallery.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Gallery.cs" />
@@ -347,6 +351,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201804112051524_galleryFix.resx">
       <DependentUpon>201804112051524_galleryFix.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804112106270_Gallery.resx">
+      <DependentUpon>201804112106270_Gallery.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
