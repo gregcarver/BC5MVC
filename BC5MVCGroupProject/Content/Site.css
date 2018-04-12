@@ -59,7 +59,7 @@ textarea {
 }
 
 #myCarousel {
-    height: 100px;
+    width: 100%;
 }
 
 .homeslide1, .homeslide2, .homeslide3 {
