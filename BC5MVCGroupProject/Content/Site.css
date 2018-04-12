@@ -1,11 +1,6 @@
-﻿html * {
-    font-family: Georgia, Georgia, serif;
-}
-
-body {
+﻿body {
     padding-top: 50px;
     padding-bottom: 20px;
-    background-color: #fad97a;
 }
 
 /* Set padding to keep content from hitting the edges */
@@ -13,32 +8,6 @@ body {
     padding-left: 15px;
     padding-right: 15px;
 }
-
-.btn-default {
-    color: #fffff0;
-    background-color: #311e0d;
-    border-color: #000000;
-}
-    .btn-default:hover,
-    .btn-default:focus,
-    .btn-default:active,
-    .btn-default.active,
-    .open .dropdown-toggle.btn-default {
-        color: #311e0d;
-        background-color: #fffff0;
-        border-color: #311e0d;
-}
-.navbar-inverse {
-    background-color: #311e0d;
-    border-color: #000000;
-}
-    .navbar-inverse .navbar-brand {
-        color: #fad97a;
-    }
-    .navbar-inverse .navbar-nav > li > a {
-        color: #fad97a;
-    }
-
 
 /* Override the default bootstrap behavior where horizontal description lists 
    will truncate terms that are too long to fit in the left column 
@@ -54,53 +23,5 @@ textarea {
     max-width: 280px;
 }
  #myCarousel{
-    height:100px;
+    width:100%
  }
-
-.homeslide1, .homeslide2, .homeslide3 {
-    min-height: 650px;
-    /*background-size: cover;*/
-    background-position: center center;
-    border-radius: 40px;
-}
-
-.homeslide1 {
-    background-image: url("Images/IMG_9911.JPG");
-    background-size: cover;
-}
-
-.homeslide2 {
-    background-image: url("Images/IMG_9493.JPG");
-    background-size: cover;
-}
-
-.homeslide3 {
-    background-image: url("Images/IMG_9495.JPG");
-    background-size: cover;
-}
-.carousel.carousel-fade .item {
-    -webkit-transition: opacity 1s linear;
-    -moz-transition: opacity 1s linear;
-    /*-ms-transition: opacity 1s linear;*/
-    -o-transition: opacity 0.2s linear;
-    transition: opacity 1s linear;
-    opacity: .5;
-}
-
-.carousel.carousel-fade .active.item {
-    opacity: 1;
-}
-
-.carousel.carousel-fade .active.left,
-.carousel.carousel-fade .active.right {
-    left: 0;
-    z-index: 2;
-    opacity: 0;
-    filter: alpha(opacity=0);
-}
-.carousel-overlay {
-    position: absolute;
-    bottom: 100px;
-    right: 0;
-    left: 0;
-}
