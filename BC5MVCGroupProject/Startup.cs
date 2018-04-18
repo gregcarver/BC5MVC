@@ -28,7 +28,7 @@ namespace BC5MVCGroupProject
                 role.Name = "Admin";
                 roleAdminRole.Create(role);
                 var user = new ApplicationUser();
-                user.Email = "keelanburnham@provalus.com";
+                user.Email = "marcus.millerprovalus@gmail.com";
                 string userPWD = "Password1!";
                 var chkUser = roleAdminUser.Create(user, userPWD);
 
