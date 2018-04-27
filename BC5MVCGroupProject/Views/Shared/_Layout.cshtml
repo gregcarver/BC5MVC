@@ -37,8 +37,8 @@
                     <li>@Html.ActionLink("Gallery", "Index", "Gallery")</li>
 
                 </ul>
-                @*<a href="/Account/Register" id="registerLink">Register</a>*@
-
+                @*<a href="/Account/Register" id="registerLink">Register</a>
+                <a href="/Account/Login" id="loginLink">Login</a>*@
             </div>
 
         </div>
@@ -80,13 +80,15 @@
                 </div>
 
 
-                <!--
+            
             <div>
-                <span style="float:left; width: 25%">@*@Html.Partial("_LoginPartial")*@</span>
-            </div>-->
+                <span style="float:right; width: 25%">@Html.Partial("_LoginPartial")</span>
+            </div>
+                 
+
                 <!--<div>
-                <span style="margin:auto; width:10%;">&copy; @DateTime.Now.Year - Drexell &amp; Honeybee's</span>
-            </div> //this is being weird-->
+        <span style="margin:auto; width:10%;">&copy; @DateTime.Now.Year - Drexell &amp; Honeybee's</span>
+    </div> //this is being weird-->
             </div>
         </footer>
     </div>

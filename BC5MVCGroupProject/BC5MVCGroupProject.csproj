@@ -197,9 +197,13 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201804121343538_First.cs" />
-    <Compile Include="Migrations\201804121343538_First.Designer.cs">
-      <DependentUpon>201804121343538_First.cs</DependentUpon>
+    <Compile Include="Migrations\201804261350157_april26.cs" />
+    <Compile Include="Migrations\201804261350157_april26.Designer.cs">
+      <DependentUpon>201804261350157_april26.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201804261401139_fixedroleshopefully.cs" />
+    <Compile Include="Migrations\201804261401139_fixedroleshopefully.Designer.cs">
+      <DependentUpon>201804261401139_fixedroleshopefully.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -347,8 +351,11 @@
     <Content Include="Scripts\jquery-1.10.2.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201804121343538_First.resx">
-      <DependentUpon>201804121343538_First.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201804261350157_april26.resx">
+      <DependentUpon>201804261350157_april26.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804261401139_fixedroleshopefully.resx">
+      <DependentUpon>201804261401139_fixedroleshopefully.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
