@@ -197,14 +197,6 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201804261350157_april26.cs" />
-    <Compile Include="Migrations\201804261350157_april26.Designer.cs">
-      <DependentUpon>201804261350157_april26.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201804261401139_fixedroleshopefully.cs" />
-    <Compile Include="Migrations\201804261401139_fixedroleshopefully.Designer.cs">
-      <DependentUpon>201804261401139_fixedroleshopefully.cs</DependentUpon>
-    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Gallery.cs" />
@@ -333,6 +325,7 @@
     <Content Include="Views\Gallery\Edit.cshtml" />
     <Content Include="Views\Gallery\Index.cshtml" />
     <Content Include="Views\Account\Register.cshtml" />
+    <Content Include="Views\Gallery\Upload.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -349,14 +342,6 @@
   <ItemGroup>
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Migrations\201804261350157_april26.resx">
-      <DependentUpon>201804261350157_april26.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201804261401139_fixedroleshopefully.resx">
-      <DependentUpon>201804261401139_fixedroleshopefully.cs</DependentUpon>
-    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

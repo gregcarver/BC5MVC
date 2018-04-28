@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Data;
 using System.Data.Entity;
+using System.IO;
 using System.Linq;
 using System.Net;
 using System.Web;
@@ -15,12 +16,40 @@ namespace BC5MVCGroupProject.Controllers
         private ApplicationDbContext db = new ApplicationDbContext();
 
         // GET: Gallery
-        public ActionResult Index()
+        public ActionResult Gallery()
         {
             //return View(db.Galleries.ToList());
             return View();
         }
+        public ActionResult Index()
+        {
+            return View();
+        }
 
+        //upload image
+        [HttpPost]
+        //Restricting access Note: this does not hide the fields/button
+        [Authorize(Roles = "Admin")]
+        public ActionResult Index(HttpPostedFileBase file)
+        {
+            if (file != null && file.ContentLength > 0)
+                try
+                {
+                    string path = Path.Combine(Server.MapPath("~/Content/Images"),
+                                               Path.GetFileName(file.FileName));
+                    file.SaveAs(path);
+                    ViewBag.Message = "File uploaded successfully";
+                }
+                catch (Exception ex)
+                {
+                    ViewBag.Message = "ERROR:" + ex.Message.ToString();
+                }
+            else
+            {
+                ViewBag.Message = "You have not specified a file.";
+            }
+            return View();
+        }
         // GET: Gallery/Details/5
         public ActionResult Details(int? id)
         {

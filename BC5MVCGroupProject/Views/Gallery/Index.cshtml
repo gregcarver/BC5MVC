@@ -39,7 +39,7 @@
             </div>
         </div>
     </div>
-    
+
 
     <!-- Left and right controls -->
     <a class="left carousel-control" href="#myCarousel" data-slide="prev">
@@ -51,10 +51,39 @@
         <span class="sr-only">Next</span>
     </a>
 </div>
+@* Upload *@
+<h2>Gallery</h2>
 
 
-<div class="row" style="margin-top:20px">
-    
+@using (Html.BeginForm("Index",
+                        "Gallery",
+                        FormMethod.Post,
+                        new { enctype = "multipart/form-data" }))
+{
+    //if (User.IsInRole("Admin"))
+    //{
+        <label for="file">Upload Image:</label>
+        <input type="file" name="file" id="file" /><br><br>
+        <input type="submit" value="Upload Image" />
+        <br><br>
+        @ViewBag.Message
+   // }
+}
+@{
+    var imagePath = Server.MapPath("~/Content/Images");
+    var files = Directory.GetFiles(imagePath);
+}
+   Total images: @files.Count()
+@foreach (var file in files)
+{
+    <div class="col-md-4" style="padding:10px">
+        <img style="width:100%" src="~/Content/Images/@Path.GetFileName(file)" alt="Sample Image" />
+    </div>
+}
+
+
+@*<div class="row" style="margin-top:20px">
+
     <div class="col-md-4">
         <img style="width:100%" src="~/Content/Images/IMG_0003.JPG" />
     </div>
@@ -65,7 +94,7 @@
         <img style="width:100%" src="~/Content/Images/IMG_0007.JPG" />
     </div>
 </div>
-    
+
 <div class="row" style="margin-top:20px">
     <div class="col-md-4">
         <img style="width:100%" src="~/Content/Images/IMG_0008.JPG" />
@@ -77,7 +106,7 @@
         <img style="width:100%" src="~/Content/Images/IMG_0013.JPG" />
     </div>
 </div>
-    
+
 <div class="row" style="margin-top:20px">
     <div class="col-md-4">
         <img style="width:100%" src="~/Content/Images/IMG_0016.JPG" />
@@ -148,12 +177,12 @@
     <div class="col-md-4">
         <img style="width:100%" src="~/Content/Images/IMG_9467.JPG" />
     </div>
-</div>
+</div>*@
 
 <p>
     @*@Html.ActionLink("Create New", "Create")*@
 </p>
-   
+
 <table class="table">
     <tr>
         <th>
@@ -163,17 +192,17 @@
     </tr>
 
     @*@foreach (var item in Model)
-    {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Create)
-            </td>
-            <td>
-                @Html.ActionLink("Edit", "Edit", new { id = item.Id }) |
-                @Html.ActionLink("Details", "Details", new { id = item.Id }) |
-                @Html.ActionLink("Delete", "Delete", new { id = item.Id })
-            </td>
-        </tr>
-    }*@
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Create)
+                </td>
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { id = item.Id }) |
+                    @Html.ActionLink("Details", "Details", new { id = item.Id }) |
+                    @Html.ActionLink("Delete", "Delete", new { id = item.Id })
+                </td>
+            </tr>
+        }*@
 
 </table>

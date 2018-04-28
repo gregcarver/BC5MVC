@@ -35,6 +35,7 @@
                     <li>@Html.ActionLink("Donate", "Donate", "Home")</li>
                     <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
                     <li>@Html.ActionLink("Gallery", "Index", "Gallery")</li>
+                    @*<li>@Html.ActionLink("Upload", "Upload", "Gallery")</li>*@
 
                 </ul>
                 @*<a href="/Account/Register" id="registerLink">Register</a>
@@ -80,7 +81,7 @@
                 </div>
 
 
-            
+            @* showing login referencing _LoginPartial *@
             <div>
                 <span style="float:right; width: 25%">@Html.Partial("_LoginPartial")</span>
             </div>

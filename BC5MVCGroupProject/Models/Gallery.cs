@@ -5,6 +5,7 @@ using System.Web;
 
 namespace BC5MVCGroupProject.Models
 {
+
     public class Gallery
     {
         public int Id { get; set; }

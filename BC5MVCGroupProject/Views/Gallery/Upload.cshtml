@@ -1,0 +1,20 @@
+﻿
+@{
+    ViewBag.Title = "Upload";
+}
+
+<h2>Upload</h2>
+@using (Html.BeginForm("Index",
+                        "Gallery",
+                        FormMethod.Post,
+                        new { enctype = "multipart/form-data" }))
+{
+    //if (User.IsInRole("Admin"))
+    //{
+    <label for="file">Upload Image:</label>
+    <input type="file" name="file" id="file" /><br><br>
+    <input type="submit" value="Upload Image" />
+    <br><br>
+    @ViewBag.Message
+    // }
+}
