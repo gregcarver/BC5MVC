@@ -4,6 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title - Drexell &amp; Honeybee's</title>
+
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
 
@@ -35,11 +36,13 @@
                     <li>@Html.ActionLink("Donate", "Donate", "Home")</li>
                     <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
                     <li>@Html.ActionLink("Gallery", "Index", "Gallery")</li>
+
+                    <li>@Html.ActionLink("Calendar", "Index", "Events")</li>
                     @*<li>@Html.ActionLink("Upload", "Upload", "Gallery")</li>*@
 
                 </ul>
                 @*<a href="/Account/Register" id="registerLink">Register</a>
-                <a href="/Account/Login" id="loginLink">Login</a>*@
+                    <a href="/Account/Login" id="loginLink">Login</a>*@
             </div>
 
         </div>
@@ -81,21 +84,24 @@
                 </div>
 
 
-            @* showing login referencing _LoginPartial *@
-            <div>
-                <span style="float:right; width: 25%">@Html.Partial("_LoginPartial")</span>
-            </div>
-                 
+                @* showing login referencing _LoginPartial *@
+                <div>
+                    <span style="float:right; width: 25%">@Html.Partial("_LoginPartial")</span>
+                </div>
+
 
                 <!--<div>
-        <span style="margin:auto; width:10%;">&copy; @DateTime.Now.Year - Drexell &amp; Honeybee's</span>
-    </div> //this is being weird-->
+                    <span style="margin:auto; width:10%;">&copy; @DateTime.Now.Year - Drexell &amp; Honeybee's</span>
+                </div> //this is being weird-->
             </div>
         </footer>
     </div>
 
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
-    @RenderSection("scripts", required: false)
+    @**@@RenderSection("scripts", required: false)
+    @RenderSection("spaghetti", required: false)
+
+
 </body>
 </html>
